@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Futsal Booking Form
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<form>
+  <div style="margin-top: 40px;">
+    
+    <strong>Please fill up enquiry and we will be in touch with you soon</strong>
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input placeholder="JackSon Smith"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" placeholder="your@gmail.com"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Tel</ion-label>
+      <ion-input type="tel" placeholder="0123456789"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Select a date:</ion-label>
+      <ion-datetime displayFormat="MMM DD, YYYY" min="2000" max="2030"></ion-datetime>
+    </ion-item>
+    <br><br>
+    <ion-item>
+      <ion-label>Type</ion-label>
+      <ion-select type="">
+        <ion-select-option value="apple">Bronze</ion-select-option>
+        <ion-select-option value="banana">Silver</ion-select-option>
+        <ion-select-option value="orange">Gold</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    
+    <ion-button type="submit" size="large" color="primary" style="display: flex; justify-content: center;">Submit</ion-button>
+    <ion-button (click)="cancel()" size="large" color="primary" style="display: flex; justify-content: center;">Cancel</ion-button>
+  </div>
+  </form>
+</ion-content>
